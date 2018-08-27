@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Vendr</title>
+  <link rel="stylesheet" href="src/style/style.css">
+</head>
+
+<body>
+  <main>
+    <section class="food" id='food-items'>
+      <article class='food-item placeholder'>
+        <img />
+        <h3></h3>
+      </article>
+      <article class='food-item placeholder'>
+        <img />
+        <h3></h3>
+      </article>
+      <article class='food-item placeholder'>
+        <img />
+        <h3></h3>
+      </article>
+    </section>
+    <section class="money">
+      <button value='0.25'>25</button>
+      <button value='0.10'>10</button>
+      <button value='0.05'>5</button>
+    </section>
+    <section class="total">
+      <p>Change:
+        <span id="total">00.00</span>
+      </p>
+
+    </section>
+    <button id='give-change'>Give change</button>
+    <section id="vend-output">
+
+    </section>
+  </main>
+  <dialog id='invalid-coin-modal'>
+    <h1>INALID COIN!</h1>
+  </dialog>
+  <dialog id='insufficient-funds-modal'>
+    <h1>INSUFFICIENT FUNDS!</h1>
+  </dialog>
+  <dialog id='out-of-stock-modal'>
+    <h1>OUT OF STOCK!</h1>
+  </dialog>
+  <script src='main.js' type='module'></script>
+</body>
+
+</html>
